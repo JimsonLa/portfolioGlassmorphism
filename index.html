@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portfolio | Développeur Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Bibliothèque d'icônes Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Arrière-plan avec formes floues animées -->
+    <div class="background">
+        <div class="blur-shape shape-1"></div> <!-- Forme bleue en haut à droite -->
+        <div class="blur-shape shape-2"></div> <!-- Forme rose en bas à gauche -->
+        <div class="blur-shape shape-3"></div> <!-- Forme violette en bas à droite -->
+    </div>
+
+    <!-- En-tête avec navigation fixe -->
+    <header>
+        <nav class="glass-nav"> <!-- Barre de navigation avec effet verre -->
+            <div class="logo">Portfolio</div> <!-- Logo / titre du site -->
+            <ul class="nav-links"> <!-- Liste des liens de navigation -->
+                <li><a href="#about" class="glass-btn">À propos</a></li> <!-- Lien avec ancre vers section "À propos" -->
+                <li><a href="#projects" class="glass-btn">Projets</a></li> <!-- Lien avec ancre vers section "Projets" -->
+                <li><a href="#skills" class="glass-btn">Compétences</a></li> <!-- Lien avec ancre vers section "Compétences" -->
+                <li><a href="#contact" class="glass-btn">Contact</a></li> <!-- Lien avec ancre vers section "Contact" -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal du site -->
+    <main>
+        <!-- Section héro (première vue) -->
+        <section id="hero" class="glass-panel hero-section"> <!-- ID pour l'ancrage et classes pour le style -->
+            <div class="hero-content"> <!-- Partie gauche avec texte -->
+                <h1>Développeur Web</h1> <!-- Titre principal avec effet dégradé (via CSS) -->
+                <p class="tagline">Je crée des expériences web modernes et immersives</p> <!-- Sous-titre / slogan -->
+                <div class="cta-buttons"> <!-- Conteneur pour les boutons d'appel à l'action (Call To Action) -->
+                    <a href="#projects" class="primary-btn">Voir mes projets</a> <!-- Bouton principal -->
+                    <a href="#contact" class="secondary-btn">Me contacter</a> <!-- Bouton secondaire -->
+                </div>
+            </div>
+            <div class="hero-image"> <!-- Partie droite avec image/carte -->
+                <div class="profile-card glass-card"> <!-- Carte de profil avec effet verre -->
+                    <div class="profile-image"></div> <!-- Image de profil (remplie via CSS) -->
+                    <div class="floating-icons"> <!-- Conteneur pour les icônes flottantes -->
+                        <i class="fab fa-html5"></i> <!-- Icône HTML5 de Font Awesome -->
+                        <i class="fab fa-css3-alt"></i> <!-- Icône CSS3 de Font Awesome -->
+                        <i class="fab fa-js"></i> <!-- Icône JavaScript de Font Awesome -->
+                        <i class="fab fa-vuejs"></i> <!-- Icône Vue.js de Font Awesome -->
+                        <i class="fab fa-php"></i> <!-- Icône PHP de Font Awesome -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="about" class="glass-panel about-section">
+            <h2>À propos</h2> <!-- Titre de la section -->
+            <div class="about-content"> <!-- Conteneur pour le contenu divisé en deux colonnes -->
+                <div class="about-text"> <!-- Colonne gauche avec texte -->
+                    <p>Développeur web passionné avec une expertise en création d'interfaces utilisateur modernes et intuitives. J'adore combiner design et fonctionnalité pour créer des expériences web immersives.</p>
+                    <p>Spécialisé dans les technologies front-end modernes comme Vue.js et les dernières standards CSS incluant les designs glassmorphism et neumorphism.</p>
+                </div>
+                <div class="about-cards"> <!-- Colonne droite avec cartes -->
+                    <!-- Carte 1: Développement Frontend -->
+                    <div class="glass-info-card">
+                        <i class="fas fa-laptop-code"></i> <!-- Icône d'ordinateur portable avec code -->
+                        <h3>Développement Frontend</h3>
+                        <p>Création d'interfaces utilisateur réactives et modernes</p>
+                    </div>
+                    <!-- Carte 2: Développement Backend -->
+                    <div class="glass-info-card">
+                        <i class="fas fa-server"></i> <!-- Icône de serveur -->
+                        <h3>Développement Backend</h3>
+                        <p>Construction d'APIs robustes et évolutives</p>
+                    </div>
+                    <!-- Carte 3: Responsive Design -->
+                    <div class="glass-info-card">
+                        <i class="fas fa-mobile-alt"></i> <!-- Icône de téléphone mobile -->
+                        <h3>Responsive Design</h3>
+                        <p>Optimisation pour tous les appareils</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects" class="projects-section">
+            <h2>Mes Projets</h2> <!-- Titre de la section -->
+            <div class="projects-grid"> <!-- Grille de projets (adaptative via CSS Grid) -->
+                <!-- Projet 1: Portfolio Window Manager -->
+                <div class="project-card glass-card"> <!-- Carte de projet avec effet verre -->
+                    <div class="project-image"> <!-- Conteneur d'image -->
+                        <img src="images/portfolioWM.png" alt="Portfolio Window Manager" class="project-img"> <!-- Image du projet avec texte alternatif -->
+                    </div>
+                    <div class="project-details"> <!-- Détails du projet -->
+                        <h3 class="project-title">Portfolio Window Manager</h3> <!-- Titre du projet -->
+                        <p>Un portfolio inspiré par le design d'un gestionnaire de fenêtres</p> <!-- Description courte -->
+                        <div class="project-tags"> <!-- Technologies utilisées -->
+                            <span class="tag">JavaScript</span> <!-- Étiquette de technologie -->
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                        <div class="project-links"> <!-- Liens vers le projet -->
+                            <a href="https://github.com/JimsonLa/" target="_blank" class="glass-icon-btn"><i class="fab fa-github"></i></a> <!-- Lien GitHub avec ouverture dans un nouvel onglet -->
+                            <a href="https://github.com/JimsonLa/portfolioWindowManager" target="_blank"class="glass-icon-btn"><i class="fas fa-external-link-alt"></i></a> <!-- Lien vers le site en ligne -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 2: WebApp ToDoList -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <img src="images/todolist.png" alt="WebApp ToDoList" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        <h3>WebApp ToDoList</h3>
+                        <p>WebApp ToDoList avec JavaScript</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/JimsonLa/" target="_blank" class="glass-icon-btn"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/JimsonLa/myToDoList" target="_blank" class="glass-icon-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 3: Application Météo -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <img src="images/weatherapp.png" alt="Application Météo" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        <h3>Application Météo</h3>
+                        <p>Interface météo intuitive avec des prévisions détaillées</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span> <!-- Utilisation d'API externe -->
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/JimsonLa/" target="_blank" class="glass-icon-btn"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/JimsonLa/meteo" target="_blank" class="glass-icon-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills" class="glass-panel skills-section">
+            <h2>Compétences</h2> <!-- Titre de la section -->
+            <div class="skills-container"> <!-- Conteneur principal -->
+                <!-- Catégorie Frontend -->
+                <div class="skills-category">
+                    <h3>Frontend</h3> <!-- Titre de la catégorie avec ligne décorative (via CSS) -->
+                    <div class="skills-grid"> <!-- Grille de compétences -->
+                        <!-- Compétence HTML5 -->
+                        <div class="skill-pill"> <!-- Élément en forme de pilule -->
+                            <i class="fab fa-html5"></i> <!-- Icône de la technologie -->
+                            <span>HTML5</span> <!-- Nom de la technologie -->
+                        </div>
+                        <!-- Compétence CSS3 -->
+                        <div class="skill-pill">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <!-- Compétence JavaScript -->
+                        <div class="skill-pill">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <!-- Compétence Vue.js -->
+                        <div class="skill-pill">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <!-- Compétence Sass -->
+                        <div class="skill-pill">
+                            <i class="fab fa-sass"></i>
+                            <span>Sass</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Catégorie Backend -->
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skills-grid">
+                        <!-- Compétence Express -->
+                        <div class="skill-pill">
+                            <i class="fas fa-server"></i>
+                            <span>Express</span>
+                        </div>
+                        <!-- Compétence MongoDB -->
+                        <div class="skill-pill">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <!-- Compétence MySQL -->
+                        <div class="skill-pill">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <!-- Compétence PHP -->
+                        <div class="skill-pill">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <!-- Compétence Firebase -->
+                        <div class="skill-pill">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Catégorie Outils -->
+                <div class="skills-category">
+                    <h3>Outils</h3>
+                    <div class="skills-grid">
+                        <!-- Compétence Git -->
+                        <div class="skill-pill">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <!-- Compétence GitHub -->
+                        <div class="skill-pill">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <!-- Compétence Docker -->
+                        <div class="skill-pill">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <!-- Compétence Figma -->
+                        <div class="skill-pill">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <!-- Compétence CLI (Command Line Interface) -->
+                        <div class="skill-pill">
+                            <i class="fas fa-terminal"></i>
+                            <span>CLI</span>
+                        </div>
+                        <!-- Compétence CI/CD (Intégration Continue/Déploiement Continu) -->
+                        <div class="skill-pill">
+                            <i class="fas fa-code-branch"></i>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="glass-panel contact-section">
+            <h2>Contact</h2>
+            <div class="contact-content"> <!-- Disposition en deux colonnes sur grands écrans -->
+                <!-- Formulaire de contact -->
+                <div class="contact-form glass-card">
+                    <form id="contact-form"> <!-- L'ID est utilisé par JavaScript pour le traitement -->
+                        <!-- Champ Nom -->
+                        <div class="form-group"> <!-- Groupe de formulaire (label + input) -->
+                            <label for="name">Nom</label> <!-- Étiquette liée au champ via l'attribut "for" -->
+                            <input type="text" id="name" name="name" class="glass-input" required> <!-- Champ texte obligatoire avec effet verre -->
+                        </div>
+                        <!-- Champ Email -->
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="glass-input" required> <!-- Type email pour validation automatique -->
+                        </div>
+                        <!-- Champ Message -->
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="glass-input" rows="5" required></textarea> <!-- Zone de texte multiligne -->
+                        </div>
+                        <!-- Conteneur pour les messages de statut (erreur/succès) -->
+                        <div id="form-message" class="form-message"></div>
+                        <!-- Bouton d'envoi -->
+                        <button type="submit" class="primary-btn">Envoyer</button>
+                    </form>
+                </div>
+                <!-- Informations de contact -->
+                <div class="contact-details">
+                    <!-- Carte Email -->
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-envelope"></i> <!-- Icône d'enveloppe -->
+                        <h3>Email</h3>
+                        <a href="mailto:jlasselin.pro@gmail.com">jlasselin.pro@gmail.com</a> <!-- Lien "mailto" qui ouvre le client email de l'utilisateur -->
+                    </div>
+                    <!-- Carte Localisation -->
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-map-marker-alt"></i> <!-- Icône de marqueur de carte -->
+                        <h3>Localisation</h3>
+                        <p>Paris, France</p>
+                    </div>
+                    <!-- Carte Téléphone -->
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-phone-alt"></i> <!-- Icône de téléphone -->
+                        <h3>Téléphone</h3>
+                        <a href="tel:+33600000000">+33 6 00 00 00 00</a> <!-- Lien "tel" qui permet d'appeler directement sur mobile -->
+                    </div>
+                    <!-- Liens vers les réseaux sociaux -->
+                    <div class="social-links">
+                        <a href="#" class="social-link glass-icon-btn"><i class="fab fa-linkedin"></i></a> <!-- LinkedIn -->
+                        <a href="#" class="social-link glass-icon-btn"><i class="fab fa-github"></i></a> <!-- GitHub -->
+                        <a href="#" class="social-link glass-icon-btn"><i class="fab fa-twitter"></i></a> <!-- Twitter -->
+                        <a href="#" class="social-link glass-icon-btn"><i class="fab fa-dribbble"></i></a> <!-- Dribbble -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="glass-panel">
+        <div class="footer-content">
+            <p>&copy; 2023 Portfolio Développeur. Tous droits réservés.</p> <!-- Copyright avec symbole © -->
+            <div class="footer-links">
+                <a href="#" class="glass-btn">Mentions légales</a> <!-- Lien vers mentions légales -->
+                <a href="#" class="glass-btn">Politique de confidentialité</a> <!-- Lien vers politique de confidentialité -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chargement du script JavaScript -->
+    <script src="script.js"></script> <!-- Placé à la fin pour charger le DOM avant d'exécuter le script -->
+</body>
+</html>
