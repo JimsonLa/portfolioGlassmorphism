@@ -319,10 +319,14 @@ main {
     padding-top: 70px;                         /* Espace pour la navigation fixe */
 }
 
-footer {
+footer.glass-panel {
     padding: 2rem;
     text-align: center;
-    margin-top: 4rem;                          /* Espace avant le footer */
+    margin: 4rem 2rem 2rem 2rem;                   /* Haut Droite Bas Gauche */
+    width: calc(100% - 4rem);                   /* Largeur totale moins les marges */
+    max-width: 1200px;                          /* Cohérent avec le reste du contenu */
+    margin-left: auto;                          /* Centre horizontalement */
+    margin-right: auto;                         /* Centre horizontalement */
 }
 
 .footer-content {
